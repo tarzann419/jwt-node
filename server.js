@@ -30,22 +30,7 @@ app.get('/posts', authenticateToken, (req,res) => {
 });
 
 
-app.post('/login', (req, res) => {
-    //authenticate userr
-    const username = req.body.username;
-    const user = { name: username }
-
-
-    // sign: (payload)
-    // serialize user obj
-    const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET)
-
-    // return access token as json
-    res.send({ accessToken: accessToken})
-
-
-    // when trying to log in, it checks if you are the authorised user then creates a jwt for the user and stores all the necessary details in the jwt.
-})
+  
 
 
 function authenticateToken(req, res, next){

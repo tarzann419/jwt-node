@@ -1,9 +1,9 @@
-GET http://localhost:3131/posts HTTP/1.1
+GET http://localhost:3030/posts HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWlrZSIsImlhdCI6MTY5NTExNDQ2M30.cp4km8je5xWSEEJMMT2JcYVcubl3AVxibCKfYDRWagM
 
 ###
 
-POST http://localhost:3131/login HTTP/1.1
+POST http://localhost:3131/login 
 Content-Type: application/json
 
 {
